@@ -35,6 +35,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3139C44E21C4375700D01EE8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3173B45F21C1AC1C0097D377 /* AppDelegate.swift */,
+				3173B46621C1AC270097D377 /* Assets.xcassets */,
+				3173B46B21C1AC270097D377 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3139C44F21C4376100D01EE8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3173B46121C1AC1C0097D377 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3139C45021C4377700D01EE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3173B46321C1AC1C0097D377 /* Main.storyboard */,
+				3173B46821C1AC270097D377 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3173B45321C1AC1C0097D377 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +81,9 @@
 		3173B45E21C1AC1C0097D377 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				3173B45F21C1AC1C0097D377 /* AppDelegate.swift */,
-				3173B46121C1AC1C0097D377 /* ViewController.swift */,
-				3173B46321C1AC1C0097D377 /* Main.storyboard */,
-				3173B46621C1AC270097D377 /* Assets.xcassets */,
-				3173B46821C1AC270097D377 /* LaunchScreen.storyboard */,
-				3173B46B21C1AC270097D377 /* Info.plist */,
+				3139C44E21C4375700D01EE8 /* Resources */,
+				3139C44F21C4376100D01EE8 /* Controller */,
+				3139C45021C4377700D01EE8 /* View */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -283,7 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Networking/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Networking/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +324,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Networking/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Networking/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
