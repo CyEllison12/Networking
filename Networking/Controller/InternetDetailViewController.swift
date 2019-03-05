@@ -64,7 +64,7 @@ public class InternetDetailViewController: UIViewController {
     
     private func loadPDF() -> Void
     {
-        if let contentPDF = Bundle.main.url(forResource: " ", withExtension:"pdf", subdirectory: nil, localization: nil)
+        if let contentPDF = Bundle.main.url(forResource: "hand", withExtension:"pdf", subdirectory: nil, localization: nil)
         {
             let requestPDF = NSURLRequest(url: contentPDF)
             webViewer.load(requestPDF as URLRequest)

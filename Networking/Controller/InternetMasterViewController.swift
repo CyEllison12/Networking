@@ -26,12 +26,12 @@ public class InternetMasterViewController: UITableViewController {
         ]
         
         addresses = [
-            "https://www.google.com",
-            "https://www.google.com",
-            "https://www.google.com",
+            "https://www.google.com/",
+            "https://www.google.com/",
+            "https://www.google.com/",
             "https://canyons.instructure.com",
             "https://ctec.canyonsdistricst.org/",
-            "https://www.youtube.com"
+            "https://www.youtube.com/"
         ]
         if let splitView = splitViewController
         {
@@ -63,7 +63,7 @@ public class InternetMasterViewController: UITableViewController {
 
     public override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
